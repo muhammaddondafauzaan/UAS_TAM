@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">RFU Mobile App</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_events">Events</string>
+    <string name="title_mutabaah">Mutabaah</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_setting">Setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="job_success">Job</string>
+    <string name="ratings">5.0</string>
+    <string name="about_me">Rois FMIPA Unila</string>
+    <string name="my_desc">UKMF LDK</string>
+    <string name="contact">085219495321</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="tittle">ROIS MOBILE APPLICATION</string>
+    <string name="login">LOGIN</string>
+    <string name="fp">Forgot Password</string>
+    <string name="cn">Create a new account</string>
+    <string name="place">Leeds, United Kingdom</string>
+    <string name="cdImageCus">Ini Gambar</string>
+    <string name="web">sanskar@theindianappguy.com</string>
+    <string name="phNumber">+91 7999193854</string>
+    <string name="profile">Profile</string>
+    <string name="nameProfile">Rois FMIPA Unila</string>
+    <string name="ukmf">UKMF - LDK</string>
+    <string name="param1">97%</string>
+    <string name="rate">4.8/5</string>
+    <string name="al">Login</string>
+</resources>
