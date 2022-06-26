@@ -3,17 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/drawable/ic_baseline_emoji_events_24.xml" value="0.1835" />
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/drawable/ic_baseline_lock_open_24.xml" value="0.187" />
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/layout/activity_main.xml" value="0.209375" />
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/layout/activity_menu.xml" value="0.209375" />
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/layout/fragment_contact_us.xml" value="0.209375" />
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.209375" />
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/layout/fragment_kontak.xml" value="0.209375" />
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/layout/fragment_login.xml" value="0.209375" />
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/layout/fragment_register.xml" value="0.209375" />
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/layout/fragment_share.xml" value="0.1" />
-        <entry key="..\:/Users/Alrizie/Desktop/uts_tam/RFUMobileApp/app/src/main/res/menu/bottom_navigation.xml" value="0.209375" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/drawable/circular_grey_bordersolid.xml" value="0.187" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/drawable/circularbordersolid.xml" value="0.187" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/drawable/ic_baseline_emoji_events_24.xml" value="0.187" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/drawable/ic_baseline_event_note_24.xml" value="0.187" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/drawable/ic_baseline_lock_open_24.xml" value="0.187" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.187" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.187" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.187" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.187" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/layout/fragment_contact_us.xml" value="0.1" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/Users/Alrizie/Desktop/RFUMobileApp/app/src/main/res/menu/bottom_navigation.xml" value="0.209375" />
       </map>
     </option>
   </component>

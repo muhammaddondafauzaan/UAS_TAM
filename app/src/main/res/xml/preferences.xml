@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="user_category"
+        android:title="USER">
+
+        <EditTextPreference
+            android:dialogTitle="Your Name"
+            android:dialogMessage="Enter Your Full Name"
+            android:inputType="textCapWords"
+            android:key="key_full_name"
+            android:title="Name"
+            android:summary="Erlangga Dwi">
+
+        </EditTextPreference>
+        <EditTextPreference
+            android:dialogTitle="Your Email"
+            android:dialogMessage="Enter Your Email Address"
+            android:inputType="textEmailAddress"
+            android:key="key_email"
+            android:title="Email"
+            android:summary="erlanggadj15@gmail.com">
+
+        </EditTextPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="PLAYER">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enable_timer"
+            android:title="Enable Timer"
+            android:summary="Enable or Disable Timer"
+            />
+
+        <ListPreference
+            android:dependency="enable_timer"
+            android:key="key_sleep_timer"
+            android:title="Sleep Timer"
+            android:summary="Stop Mutabaah Timer"
+            android:entries="@array/timerList"
+            android:entryValues="@array/timerListValue"
+            />
+
+        <ListPreference
+            android:key="key_audio_quality"
+            android:title="Audio Quality"
+            android:entries="@array/audioQuality"
+            android:entryValues="@array/audioQualityValues"
+            />
+
+        <MultiSelectListPreference
+            android:dialogTitle="Select all your options"
+            android:key="audio_type"
+            android:title="Types of audio"
+            android:summary="Press to show List"
+            android:entries="@array/typesOfAudio"
+            android:entryValues="@array/typesOfAudioValues"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="OTHER">
+
+        <SwitchPreference
+            android:key="enable_notification"
+            android:editable="true"
+            android:title="Push notification"
+            />
+
+        <RingtonePreference
+            android:key="key_notificartion"
+            android:title="Notification ringtone"
+            android:summary="Choose notification sound"
+            android:ringtoneType="notification"
+            android:dependency="enable_notification"
+            />
+
+        <Preference
+            android:title="Log Out"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
