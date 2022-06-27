@@ -31,34 +31,29 @@ public class LoginFragment extends Fragment {
         lgbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                boolean isEmptFields = false;
-//                if(TextUtils.isEmpty(Objects.requireNonNull(em.getText()).toString())){
+                boolean isEmptFields = false;
+//                if(TextUtils.isEmpty(Objects.requireNonNull(em.getText()).toString()))
 //                    isEmptFields = true;
-//                }
-//                if(TextUtils.isEmpty(Objects.requireNonNull(inpass.getText()).toString())){
+//                if(TextUtils.isEmpty(Objects.requireNonNull(inpass.getText()).toString()))
 //                    isEmptFields = true;
-//                }
 //                if(!isEmptFields){
-//                    startActivity(new Intent(getActivity(), MenuActivity.class));
+//                    checkDataPengurus();
+                    startActivity(new Intent(getActivity(), MenuActivity.class));
 //                }
-                startActivity(new Intent(getActivity(), MenuActivity.class));
             }
         });
-
         return view;
     }
 
-    private void checkDataPengurus() {
+    private boolean checkDataPengurus() {
         readDataPengurus();
         String usName = Objects.requireNonNull(em.getText()).toString().trim();
         String pass = Objects.requireNonNull(inpass.getText()).toString().trim();
-        if (username.contains(usName) || TextUtils.isEmpty(usName)){
-            if (password.contains(pass) || TextUtils.isEmpty(pass)){
-
-            } else {
-            }
-        } else {
+        if ((username.contains(usName) || TextUtils.isEmpty(usName))
+                && (password.contains(pass) || TextUtils.isEmpty(pass))){
+            return true;
         }
+        return false;
     }
 
     private void readDataPengurus(){

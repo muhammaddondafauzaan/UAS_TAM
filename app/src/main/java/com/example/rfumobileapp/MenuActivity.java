@@ -1,50 +1,59 @@
 package com.example.rfumobileapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentTransaction;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.navigation.NavigationView;
 
 public class MenuActivity extends AppCompatActivity {
-    BottomNavigationView bottomNavigation;
+
+    private DrawerLayout drawer;
+    private NavigationView navigationView;
+    private MaterialToolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
-        bottomNavigation = findViewById(R.id.bottomNavigationView);
+        setContentView(R.layout.activity_main);
 
+        initViews();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.menuApp, new
-                DashboardFragment()).commit();
+        setSupportActionBar(toolbar);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
+                R.string.drawer_open, R.string.drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
 
-        bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment selectedFragment = null;
-
                 switch (item.getItemId()) {
-                    case R.id.navigation_dashboard:
-                        selectedFragment = new DashboardFragment();
+                    case R.id.mutabaah:
+                        Toast.makeText(MenuActivity.this, "Cart Selected1", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.navigation_events:
-                        selectedFragment = new EventsFragment();
+                    default:
                         break;
-                    case R.id.navigation_mutabaah:
-                        selectedFragment = new MutabaahFragment();
-                        break;
-                    case R.id.navigation_setting:
-                        startActivity(new Intent(MenuActivity.this, SettingFragment.class));
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.menuApp, selectedFragment).commit();
-                return true;
+                return false;
             }
         });
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, new MainFragment());
+        transaction.commit();
+    }
+
+    private void initViews() {
+        drawer = findViewById(R.id.drawer);
+        navigationView = findViewById(R.id.navigationView);
+        toolbar = findViewById(R.id.toolbar);
     }
 }
