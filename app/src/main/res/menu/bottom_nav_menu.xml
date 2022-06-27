@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Dashboard"
+        android:id="@+id/dashboard"
+        android:icon="@drawable/ic_baseline_people_24"/>
+
+    <item
+        android:title="Event"
+        android:id="@+id/event"
+        android:icon="@drawable/ic_baseline_people_24"/>
+
+    <item
+        android:title="Mutabaah"
+        android:id="@+id/mutabaah"
+        android:icon="@drawable/ic_cart"/>
+
+</menu>
